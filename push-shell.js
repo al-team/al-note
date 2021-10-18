@@ -12,6 +12,7 @@ function execute(cmd) {
 
 execute(
   `
+    git pull
     git add .
     git commit -m 'updated at ${dateFormatter()}'
     git push
