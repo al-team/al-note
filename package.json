@@ -1,0 +1,12 @@
+{
+  "name": "al-note",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:alvin0216/al-note.git",
+  "author": "alvin <alvin00216@163.com>",
+  "license": "MIT",
+  "scripts": {
+    "push": "node push-shell.js",
+    "p": "npm run push"
+  }
+}

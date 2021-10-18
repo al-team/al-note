@@ -1,0 +1,45 @@
+node_modules
+/.svn
+/.idea
+/ios/
+/android/
+*.log
+tests
+.cache
+# production
+dist
+/.vscode
+/build
+packages/*/lib/
+packages/*/es/
+packages/*/dist/
+packages/*/build/
+packages/*/examples/*/build/
+packages/*/.eslintcache
+
+# misc
+.DS_Store
+npm-debug.log*
+yarn-error.log
+
+/coverage
+.idea
+yarn.lock
+*bak
+.vscode
+
+# visual studio code
+.history
+*.log
+
+functions/mock
+.temp/**
+
+# umi
+.umi
+.umi-production
+
+# screenshot
+screenshot
+.firebase
+/gitScript
