@@ -10,6 +10,7 @@
 
 - [🔥 连八股文都不懂还指望在前端混下去么](https://juejin.cn/post/7016593221815910408)
 - [我从来不理解 JavaScript 闭包，直到有人这样向我解释它](https://juejin.cn/post/6844903858636849159)
+- [32 个手写 JS，巩固你的 JS 基础（面试高频）](https://juejin.cn/post/6875152247714480136)
 
 ### 浏览器
 
@@ -25,6 +26,7 @@
 
 - [谈谈 React 框架运行时优化方案的演进](https://mp.weixin.qq.com/s/tjZVXE6Gw_a0VrYloIh6jQ)
 - [高频 react 面试题 20 道（附详解）](https://mp.weixin.qq.com/s/BizoE7bOuc9KoGKXv5chTg)
+- [人人都能读懂的 react 源码解析(大厂高薪必备)](https://xiaochen1024.com/article_item/600ac6afecf02e002e6db56b)
 
 ### 前端工程化
 
