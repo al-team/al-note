@@ -9,6 +9,8 @@
     8. 文件的hash-3种 区别
     9. 强缓存和协商缓存
     10. MF的优缺点-css、js文件污染怎么解决？有个shaxx dom的解决Js css用module；
+        1.  [解答1](https://juejin.cn/post/6844904018263670798)
+        2.  [解答2](https://www.cnblogs.com/xiaohuochai/p/6847939.html)
     11. require和import module的区别----》问的比较深 貌似达不到标准
     12. 一道算法题 封装一个class，有push 、pop、get方法功能；
         1.  push一些数据进去
