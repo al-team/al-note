@@ -27,16 +27,18 @@ function myNew(Father) {
 ## 手写继承
 
 ```js
-child.prototype => Father.prototype
-
-function myExtends(Child, Father) {
-  function Temp() {}
-  Temp.prototype = Father.prototype;
-  const instance = new Temp();
-
-  instance.constructor = Child;
-  child.prototype = instance;
+function Parent(name) {
+  this.name = name;
 }
+
+function Child(name) {
+  Parent.call(this, name);
+}
+
+function F() {} // 1. 新建立一个中转函数
+F.prototype = Parent.prototype; // 函数原型指向 Parent
+Child.prototype = new F(); // 将子类的原型指向 F 的实例
+Child.prototype.constructor = Child;
 ```
 
 ## 手写 call
