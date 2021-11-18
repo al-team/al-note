@@ -159,3 +159,13 @@ F.prototype = Parent.prototype; // 函数原型指向 Parent
 Child.prototype = new F(); // 将子类的原型指向 F 的实例
 Child.prototype.constructor = Child;
 ```
+
+## 事件循环机制
+
+[eventloop](https://alvin.run/docs/javascript/v8/eventloop.html)
+
+EventLoop 简单来说是一个用于**统筹调度任务**的一种机制。
+
+1. js 的主线程是单线程的，大部分的任务都是在主线程上执行。比如网络请求、文件读写完成事件等等。
+2. 容易造成任务阻塞，事件循环机制就是用来调度这些任务的。任务又分成宏任务和微任务。常见的宏任务有 `setTimeout` 、`setInterval` 等，常见的微任务有 `Promise.then`, `process.nextTick` 等。
+3. 流程：执行同步代码，检查微任务，将微任务推到队列中，等当前的宏任务执行完毕之后，执行队列中的微任务，等执行完毕后再进行下一个宏任务。

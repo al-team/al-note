@@ -18,6 +18,71 @@ next:
 
 ### 手写 promise 系列
 
+promise.all
+
+```js
+async function all(promises = []) {
+  return new Promise((resolve, reject) => {
+    let result = [];
+    let count = promises.length;
+    if (count === 0) resolve([]); // Promise.all([]) 的情况
+
+    for (let i = 0; i < promises.length; i++) {
+      Promise.resolve(promises[i]) // 使用 Promise.resolve 包装。Promise.all([1,2,3]) 的情况
+        .then((res) => {
+          result[i] = res;
+          count--;
+          if (count === 0) {
+            resolve(result);
+          }
+        })
+        .catch(reject);
+    }
+  });
+}
+```
+
+Promise.allSettled
+
+```js
+async function allSettled(promises = []) {
+  return new Promise((resolve, reject) => {
+    let result = [];
+    let count = promises.length;
+    if (count === 0) resolve([]); // Promise.allSettled([]) 的情况
+    for (let i = 0; i < promises.length; i++) {
+      Promise.resolve(promises[i])
+        .then(
+          (value) => {
+            result[i] = { status: 'fullfilled', value };
+          },
+          (error) => {
+            result[i] = { status: 'rejected', reason: error };
+          },
+        )
+        .finally(() => {
+          count--;
+          if (count === 0) {
+            resolve(result);
+          }
+        });
+    }
+  });
+}
+```
+
+Promise.race
+
+```js
+function race(promises) {
+  return new Promise((resolve, reject) => {
+    for (let i = 0; i < promises.length; i++) {
+      Promise.resolve(promises[i]).then(resolve).catch(reject);
+    }
+  });
+}
+```
+
 ### 异步面试题
 
 ```js
@@ -77,4 +142,28 @@ new Promise((resolve, reject) => {
     console.log('catch');
   });
 // 1 catch
+```
+
+## 闭包题目
+
+```js
+var nAdd;
+var t = function () {
+  var n = 99;
+  nAdd = function () {
+    n++;
+  };
+  var t2 = function () {
+    console.log(n);
+  };
+  return t2;
+};
+
+var a1 = t();
+var a2 = t();
+
+nAdd();
+
+a1(); //99
+a2(); //100
 ```
