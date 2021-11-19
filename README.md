@@ -32,3 +32,5 @@
 
 - [前端知识脑图](https://f2e.tech/)
 - [大公司里怎样开发和部署前端代码？](https://www.zhihu.com/question/20790576/answer/2193484036?utm_source=wechat_session&utm_medium=social&utm_oi=1225464592656166912&utm_content=group3_Answer&utm_campaign=shareopn)
+- [当面试官问 Webpack 的时候他想知道什么](https://juejin.cn/post/6943468761575849992#heading-1)
+- [webpack 十连问你能接住几题](https://juejin.cn/post/7002839760792190989)
