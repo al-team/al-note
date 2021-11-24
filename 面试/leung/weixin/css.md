@@ -50,7 +50,7 @@ var basegg = 'data:image/png;base64,xxxx'
   * [1px问题](https://mp.weixin.qq.com/s/IrV0-v3v5Cl969yFCI58Rg)(done)
   * [rem和vw原理](https://mp.weixin.qq.com/s/8m6WqwhjKJebZVB2wpbbbg)
     * rem存在的问题 [css精度缺失]（https://x-fox.github.io/blog/2021/05/11/about-css-px-issue/）；
-
+    > 相对window.innerWidth innerHeight 而vw vh是clientWidth 
     > 新闻，社区等可阅读内容较多的场景：px+flex+百分比
     > 对视觉组件种类较多，视觉设计对元素位置的相对关系依赖较强的移动端页面：vw + rem
   * css 层叠上下文是什么？(z-index由来) [文章](https://juejin.cn/post/6844903667175260174)
