@@ -1,0 +1,25 @@
+<html>
+  <body>
+    我爱学习
+  </body>
+</html>
+<script type="module">
+  /**
+   *  https://zhuanlan.zhihu.com/p/121770261
+   *  1.import/exports 可以在script标签的时候在，require如果没有打webpack rollup等打包工具转化的话 不能在浏览器运行
+   *  2.import/exports抛出的值是值引用，require的是值拷贝
+   *  3.import/export是静态编译，在编译的时候执行；require是运行时动态加载；因此有时候你require一个不存在的路径，eslint也不会提示
+   *  4.用法不一致
+   *  require是 exports.fs=fs  module.exports=fs
+   *  import/exports 不建议使用import * as xx用法，因为这种不利于three shaking;
+   *  但 module 不支持 FTP 文件协议(file://)，只支持 HTTP 协议，所以本地需要使用 http-server 等本地网络服务器打开网页文件
+   * 
+   *  5. ES6 模块可以在 import 引用语句前使用模块，CommonJS 则需要先引用后使用;
+   *  6. import/export 导出的模块默认调用严格模式。 require/exports 默认不使用严格模式，可以自定义是否使用严格模式
+   */
+  import {a,b} from './test.js'  
+  const test=b
+  test.c=90
+  console.log(a,99)
+  console.log(b,test)
+</script>
