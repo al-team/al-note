@@ -12,8 +12,9 @@
 - [我从来不理解 JavaScript 闭包，直到有人这样向我解释它](https://juejin.cn/post/6844903858636849159)
 - [32 个手写 JS，巩固你的 JS 基础（面试高频）](https://juejin.cn/post/6875152247714480136)
 
-## Javascript 
- * [js进阶题](https://github.com/lydiahallie/javascript-questions/blob/master/zh-CN/README-zh_CN.md#%E7%AD%94%E6%A1%88-c-23)
+## Javascript
+
+- [js 进阶题](https://github.com/lydiahallie/javascript-questions/blob/master/zh-CN/README-zh_CN.md#%E7%AD%94%E6%A1%88-c-23)
 
 ### 浏览器
 
@@ -37,3 +38,4 @@
 - [大公司里怎样开发和部署前端代码？](https://www.zhihu.com/question/20790576/answer/2193484036?utm_source=wechat_session&utm_medium=social&utm_oi=1225464592656166912&utm_content=group3_Answer&utm_campaign=shareopn)
 - [当面试官问 Webpack 的时候他想知道什么](https://juejin.cn/post/6943468761575849992#heading-1)
 - [webpack 十连问你能接住几题](https://juejin.cn/post/7002839760792190989)
+- [面试被问到性能优化，我们可以讲些什么](https://mp.weixin.qq.com/s/AraiuSYyIyCfzIKj0Vkhtg)
