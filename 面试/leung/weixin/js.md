@@ -14,7 +14,7 @@ var sayName = function (){
     console.log(6666)
 }
 
-var person = new Person(); // {name:'smiley',sayName:func}    1.window Smiley 
+var person = new Person(); // {name:'smiley',sayName:func}    1.window Nicolas 
 person.sayName();     //Peosn{} simle
 
 

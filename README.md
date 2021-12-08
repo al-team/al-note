@@ -39,3 +39,6 @@
 - [当面试官问 Webpack 的时候他想知道什么](https://juejin.cn/post/6943468761575849992#heading-1)
 - [webpack 十连问你能接住几题](https://juejin.cn/post/7002839760792190989)
 - [面试被问到性能优化，我们可以讲些什么](https://mp.weixin.qq.com/s/AraiuSYyIyCfzIKj0Vkhtg)
+
+### 性能优化
+* [掘金好文](https://juejin.cn/post/6892994632968306702)
